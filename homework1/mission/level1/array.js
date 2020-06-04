@@ -2,7 +2,7 @@
 /*   1. 배열의 선언 실습    */
 /* -------------------- */
 
-var server1 = ["신윤재", "정형일", 43, null, true];          // 배열 리터럴을 이용하는 방법
+var server1 = ["정형일", "정형일", 43, null, true];          // 배열 리터럴을 이용하는 방법
 var server2 = Array("신윤재", "유가희", 13);     // Array 객체의 생성자를 이용하는 방법
 var server3 = new Array("이현주", "조충범", false, undefined); // new 연산자를 이용한 Array 객체 생성 방법
 
