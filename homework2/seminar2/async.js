@@ -28,5 +28,5 @@ async function asyncMain () {
     console.log(result)
 }
 
-promiseMain()
-// asyncManin()
+// promiseMain()
+asyncMain()
