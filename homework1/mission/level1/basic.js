@@ -2,9 +2,9 @@
 /*   1. 변수 재선언 실습    */
 /* -------------------- */
 
-var vv = 123;
-vv = 321;
-console.log("vv : ", vv);
+    var vv = 123;
+    vv = 321;
+    console.log("vv : ", vv);
 
 let ll = 123;
 ll = 321;
