@@ -4,9 +4,10 @@ var router = express.Router();
 router.get('/', (req, res) => {
     const result = {
         status: 200,
-        message: 'blog에 접근합니다.'
+        message: 'api~!'
     }
     res.status(200).send(result);
 });
-
+router.use('/blog', require('./blog'));
+router.use('/users', require('./users'));
 module.exports = router;
