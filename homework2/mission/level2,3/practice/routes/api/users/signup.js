@@ -4,7 +4,7 @@ var router = express.Router();
 router.get('/', (req, res) => {
     const result = {
         status: 200,
-        message: 'singup success~'
+        message: 'singup success'
     }
     res.status(200).send(result);
 });
