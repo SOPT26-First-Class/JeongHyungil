@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
         .status(200)
         .send(result);
 });
-// post 접근
+
 
 router.use('/post', require('./post'));
 module.exports = router;

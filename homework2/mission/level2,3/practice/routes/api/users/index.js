@@ -13,6 +13,7 @@ router.get('/', (req, res) => {
 
 // loing, signup 파일 접근
 router.use('/login', require('./login'));
+
 router.use('/signup', require('./signup'));
 
 module.exports = router;
