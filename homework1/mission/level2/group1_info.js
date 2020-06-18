@@ -1,20 +1,38 @@
-class group1_info {
-    constructor(name, age, nick) {
-        this.name = name;
-        this.nick;
-        this.age;
-    }
+const printNames = function () {
+    console.log(
+        "name : " + this.name + ", nick : " + this.name + ", age " + this.age
+    );
 }
 
-var group1 = [
-    { name: '정형일', nick: '정형일짱', age: 27 },
-    { name: '신윤재', nick: '윤자이', age: 26 },
+const group1 = [
+    {
+        name: '정형일',
+        nick: '정형일짱',
+        age: 27,
+        printName: printNames
+    }, {
+        name: '신윤재',
+        nick: '윤자이',
+        age: 26,
+        printName: printNames
+    }, {
+        name: '서영',
+        nick: '서영짱',
+        age: 26,
+        printName: printNames
+    }, {
+        name: '유영',
+        nick: '유영짱',
+        age: 26,
+        printName: printNames
+    }, {
+        name: '준엽',
+        nick: '준엽',
+        age: 26,
+        printName: printNames
+    }
 ];
 
-function info() {
-
-    console.log('info : ' + JSON.stringify(group1));
-
+for (var member of group1) {
+    member.printName();
 }
-
-info();
