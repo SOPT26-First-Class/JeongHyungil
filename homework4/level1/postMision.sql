@@ -9,7 +9,7 @@ select COUNT(*) from post;
 select title from post;
 
 /-- 아무 값이나 INSERT 해보기 --/
-insert into post (author, title, content, createdAt) values ("최정균", "SOPT", "Server_Part", "2020/05/16");
+insert into post (author, title, content, createdAt) values ("정형일", "SOPT", "Server_Part", "2020/06/19");
 
 
 /-- postIdx가 3인 데이터 조회하기 --/
