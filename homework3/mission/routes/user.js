@@ -46,6 +46,8 @@ let resMessage = require('../modules/responseMessage');
 
 
 // 3단계
+// 암호화
+
 router.post('/signup', async (req, res) => {
     const {
         id,
@@ -54,6 +56,7 @@ router.post('/signup', async (req, res) => {
         email
     } = req.body;
     
+
     // request data 확인 - 없다면 Null Value 반환
     if (!id || !name || !password || !email) {
         res.status(statusCode.BAD_REQUEST)
@@ -106,6 +109,7 @@ router.post('/signin', async (req, res) => {
         return;
     }
     // 비밀번호 확인 - 없다면 Miss match password 반환
+    
     if (user[0].password !== password ) {
         res.status(statusCode.BAD_REQUEST)
         .send(util.fail(statusCode.BAD_REQUEST, resMessage.MISS_MATCH_PW));
