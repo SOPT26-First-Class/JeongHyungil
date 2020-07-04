@@ -108,7 +108,7 @@ router.post('/signin', async (req, res) => {
             .send(util.fail(statusCode.BAD_REQUEST, resMessage.NO_USER));
         return;
     }
-    // 비밀번호 확인 - 없다면 Miss match password 반환
+    // 비밀번호 확인 -  없다면 Miss match password 반환
     
     if (user[0].password !== password ) {
         res.status(statusCode.BAD_REQUEST)
