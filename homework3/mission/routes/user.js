@@ -82,7 +82,7 @@ router.post('/signup', async (req, res) => {
 });
 
 /* 
-    ✔️ sign in
+    ✔️ sign in!
     METHOD : POST
     URI : localhost:3000/user/signin
     REQUEST BODY : id, name
